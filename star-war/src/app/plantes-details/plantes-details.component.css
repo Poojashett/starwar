@@ -1,0 +1,153 @@
+.people-detail-maindiv1 {
+  background-color: rgb(117, 188, 255, 0.1);
+  width: 51%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.people-detail-maindiv2 {
+  display: flex;
+  margin: auto;
+  width: 85%;
+  justify-content: center;
+}
+
+#yoda-size {
+  width: 90%;
+  height: 77%;
+}
+
+.detail-div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 44px;
+  overflow-y: auto;
+  height: 299px;
+  text-align: justify;
+  margin-bottom: 42px;
+  line-height: 32px;
+  color: white;
+}
+
+.img-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 365px;
+
+}
+
+.heading-name {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: start;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track {
+  width: 4px;
+  /* border: none; */
+  /* background: transparent; */
+}
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #00a8ff;
+}
+
+::-webkit-scrollbar-track {
+  background-image: url("https://i.imgur.com/GvV1R30.png");
+  opacity: 90%;
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-color: transparent;
+}
+
+.designation{
+  color: #A5C1D3;
+  font-size: 17px;
+ 
+}
+
+
+.designation-data{
+  color: white;
+  font-size: bolder;
+
+}
+.des-p{
+  padding-right: 30px;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 700px) {
+  .people-detail-maindiv2 {
+    flex-direction: column;
+  }
+
+  .people-detail-maindiv1 {
+    background-color: transparent;
+  }
+
+  #yoda-size {
+    width: 208%;
+  }
+
+  .detail-div {
+    width: 104%;
+    height: 200px;
+    margin-top: 24px;
+    margin-bottom: -32px;
+  }
+
+  .img-div {
+    margin-top: -26px;
+  }
+
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-track {
+    width: 4px;
+    /* border: none; */
+    /* background: transparent; */
+  }
+  ::-webkit-scrollbar-button,
+  ::-webkit-scrollbar-track-piece,
+  ::-webkit-scrollbar-corner,
+  ::-webkit-resizer {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    background-color: #00a8ff;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-image: url("https://i.imgur.com/GvV1R30.png");
+    opacity: 90%;
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .people-detail-maindiv1 {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .people-detail-maindiv1 {
+    width: 62%;
+  }
+}

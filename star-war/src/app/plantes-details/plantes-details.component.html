@@ -1,0 +1,24 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+
+<div class="people-detail-maindiv1">
+  <div class="people-detail-maindiv2">
+    <div class="img-div">
+      <img [src]="src" alt="" id="yoda-size" />
+    </div>
+    <div class="detail-div" >
+      <h1 class="heading-name">{{planets.name | uppercase}}</h1>
+      <p class="des-p"><span class="designation">Climate :  </span><span class="designation-data"> {{planets.climate | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Diameter :  </span><span class="designation-data">{{planets.diameter | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Gravity :  </span><span class="designation-data">{{planets.gravity | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Orbital_period :  </span><span class="designation-data">{{planets.orbital_period | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Population :  </span><span class="designation-data">{{planets.population | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Rotation_period :  </span><span class="designation-data">{{planets.rotation_period | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Surface_water :  </span><span class="designation-data">{{planets.surface_water | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Terrain :  </span><span class="designation-data">{{planets.terrain | titlecase}}</span></p>
+
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

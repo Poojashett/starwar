@@ -1,0 +1,36 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+
+<div class="people-detail-maindiv1">
+  <div class="people-detail-maindiv2">
+    <div class="img-div" *ngIf="filmdetail.title =='A New Hope'">
+      <img src="./assets/film2.jpg" alt="" id="yoda-size" />
+    </div>
+    <div class="img-div" *ngIf="filmdetail.title =='The Empire Strikes Back'">
+      <img src="./assets/films4.png" alt="" id="yoda-size" />
+    </div>
+    <div class="img-div" *ngIf="filmdetail.title =='Return of the Jedi'">
+      <img src="./assets/returnofthejedi.jpeg" alt="" id="yoda-size" />
+    </div>
+     <div class="img-div" *ngIf="filmdetail.title =='The Phantom Menace'">
+      <img src="./assets/phntem.jpeg" alt="" id="yoda-size" />
+    </div> 
+    <div class="img-div" *ngIf="filmdetail.title =='Attack of the Clones'">
+      <img src="./assets/attack.jpeg" alt="" id="yoda-size" />
+    </div> 
+    <div class="img-div" *ngIf="filmdetail.title =='Revenge of the Sith'">
+      <img src="./assets/revenge.jpeg" alt="" id="yoda-size" />
+    </div> 
+    <div class="detail-div">
+      <h1 class="heading-name">{{filmdetail.title | uppercase}}</h1>
+      <p class="des-p"><span class="designation">Director :  </span><span class="designation-data">{{filmdetail.director| titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Episode_id :  </span><span class="designation-data">{{filmdetail.episode_id }}</span></p>
+      <p class="des-p"><span class="designation">Opening_crawl :  </span><span class="designation-data">{{filmdetail.opening_crawl | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Producer :  </span><span class="designation-data">{{filmdetail.producer | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Release_date :  </span><span class="designation-data">{{filmdetail.release_date}}</span></p>
+
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+

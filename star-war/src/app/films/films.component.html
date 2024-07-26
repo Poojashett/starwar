@@ -1,0 +1,24 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<div class="main">
+  <div *ngIf="load">
+    <span class="sr-only" class="loader"></span>
+  </div>
+
+<div  *ngIf="unload">
+  <div class="people-character-data" *ngFor="let film of films.results">
+    <div routerLink="/films-details" (click)="filmCharacter(films.results.indexOf(film))" >
+      <span> {{ film.title | uppercase }}</span>
+    </div>
+  </div>
+
+</div>
+</div>
+<app-footer></app-footer>
+
+
+<!-- <div class="button">
+  <button class="btn1">PREVIOUS</button>
+  <button class="btn2">NEXT</button>
+</div> -->
+

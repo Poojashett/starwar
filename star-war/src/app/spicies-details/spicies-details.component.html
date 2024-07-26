@@ -1,0 +1,24 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+
+<div class="people-detail-maindiv1">
+  <div class="people-detail-maindiv2">
+    <div class="img-div">
+      <img [src]="src" alt="" id="yoda-size" />
+    </div>
+    <div class="detail-div" >
+      <h1 class="heading-name">{{species.name | uppercase}}</h1>
+      <p class="des-p"><span class="designation">Average_height :  </span><span class="designation-data"> {{species.average_height | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Average_lifespan :  </span><span class="designation-data">{{species.average_lifespan| titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Classification :  </span><span class="designation-data">{{species.classification | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Designation :  </span><span class="designation-data">{{species.designation | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Eye_colors :  </span><span class="designation-data">{{species.eye_colors | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Hair_colors :  </span><span class="designation-data">{{species.hair_colors | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Language :  </span><span class="designation-data">{{species.language | titlecase}}</span></p>
+
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
+

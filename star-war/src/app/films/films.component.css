@@ -1,0 +1,75 @@
+.people-character-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: auto;
+  margin-top: 38px;
+}
+.people-character-data div {
+  padding: 9px 0;
+  width: 210px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: -1px;
+  cursor: pointer;
+}
+
+.people-character-data div:hover {
+  background-color: rgba(13, 168, 255, 0.45);
+}
+span {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+  margin-top: 25px;
+  font-size: 15px;
+
+  /* background-color: #00A8FF; */
+}
+.main {
+  height: 490px;
+  margin-bottom: -35px;
+}
+
+@media only screen and (max-width: 700px) {
+  /* button {
+    width: 80px;
+    text-align: center;
+    font-size: 10px;
+    padding: 6px 14px;
+  } */
+
+  .people-character-data {
+    margin-top: 13px;
+  }
+  span {
+    font-size: 18px;
+  }
+  .people-character-data div {
+    width: 222px;
+  }
+  .people-character-data {
+    margin-top: 36px;
+  }
+  .main {
+    height: 460px;
+    margin-bottom: -8px;
+  }
+
+  .loader {
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+  }
+
+  .loader,
+  .loader:after {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+  }
+}

@@ -1,0 +1,22 @@
+
+<app-header></app-header>
+<app-navbar></app-navbar>
+<div class="main">
+  <div *ngIf="load">
+    <span class="sr-only" class="loader"></span>
+  </div>
+<div *ngIf="unload">
+  <div class="people-character-data"  *ngFor="let s of species.results">
+    <div routerLink="/spicies-details" (click)="character(species.results.indexOf(s))"><span>{{s.name | uppercase}}</span></div>
+  </div>
+  
+</div>
+</div>
+  
+<div class="button">
+  <button class="btn1" (click)="previousApi(species?.previous)" [ngClass]="disableP">PREVIOUS</button>
+  <button class="btn2" (click)=" nextApi(species?.next)" [ngClass]="disableN">NEXT</button>
+</div>
+<app-footer></app-footer>
+
+
