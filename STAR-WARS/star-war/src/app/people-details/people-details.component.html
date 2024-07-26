@@ -1,0 +1,23 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+
+<div class="people-detail-maindiv1">
+  <div class="people-detail-maindiv2">
+    <div class="img-div">
+      <img [src]="src" alt="" id="yoda-size" />
+    </div>
+    <div class="detail-div" >
+      <h1 class="heading-name">{{people.name | uppercase}}</h1>
+      <p class="des-p"><span class="designation">Birth_year :  </span><span class="designation-data"> {{people.birth_year | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Eye_color :  </span><span class="designation-data">{{people.eye_color| titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Gender :  </span><span class="designation-data">{{people.gender | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Height :  </span><span class="designation-data">{{people.height | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Mass :  </span><span class="designation-data">{{people.mass | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Hair_color :  </span><span class="designation-data">{{people.hair_color | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Skin_color :  </span><span class="designation-data">{{people.skin_color | titlecase}}</span></p>
+
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

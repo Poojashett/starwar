@@ -1,0 +1,38 @@
+<div>
+  <app-header></app-header>
+  <div class="starwar-icon">
+    <div class="films-icon-div" routerLink="/films-character" (mouseover)="changeImage1=true" (mouseout)="changeImage1=false">
+      <img  class="films-icon" src="./assets/films_normal.png" alt="" *ngIf="!changeImage1">
+      <img class="characters" src="./assets/films_pressed.png" alt="" *ngIf="changeImage1">
+      <p class="films">FILMS</p>
+    </div>
+    <div class="films-icon-div" routerLink="/spicies-character" (mouseover)="changeImage2=true" (mouseout)="changeImage2=false">
+      <img  class="species" src="./assets/species_normal.png" alt="" *ngIf="!changeImage2">
+      <img class="characters" src="./assets/species_pressed.png" alt="" *ngIf="changeImage2">
+
+      <p class="films">SPICIES</p>
+    </div>
+    <div class="films-icon-div" routerLink="/plantes-character" (mouseover)="changeImage3=true" (mouseout)="changeImage3=false">
+      <img  class="planets" src="./assets/planets_normal.png" alt="" *ngIf="!changeImage3">
+      <img class="characters" src="./assets/planets_pressed.png" alt="" *ngIf="changeImage3">
+
+      <p class="films">PLANETS</p>
+    </div>
+    <div class="films-icon-div" routerLink="/people-character" (mouseover)="changeImage4=true" (mouseout)="changeImage4=false"> 
+      <img class="characters" src="./assets/characters_normal.png" alt="" *ngIf="!changeImage4">
+      <img  class="characters" src="./assets/characters_pressed.png" alt="" *ngIf="changeImage4">
+      <p class="films">CHARACTER</p>
+    </div>
+    <div class="films-icon-div" routerLink="/straship-character" (mouseover)="changeImage5=true" (mouseout)="changeImage5=false">
+      <img  class="starship" src="./assets/vehicles_normal.png" alt="" *ngIf="!changeImage5">
+      <img class="characters" src="./assets/vehicles_pressed.png" alt="" *ngIf="changeImage5">
+      <p class="films">STARSHIP</p>
+    </div>
+    <div class="films-icon-div" routerLink="/vehicles-character" (mouseover)="changeImage6=true" (mouseout)="changeImage6=false">
+      <img class="vehicles" src="./assets/droids_normal.png" alt="" *ngIf="!changeImage6">
+      <img class="characters" src="./assets/droids_pressed.png" alt="" *ngIf="changeImage6">
+       <p class="films">VEHICLES</p>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

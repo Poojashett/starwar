@@ -1,0 +1,119 @@
+.people-character-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin: auto;
+  margin-top: 3px;
+}
+.people-character-data div {
+  padding: 10px 0;
+  width: 210px;
+  margin: auto;
+  text-align: center;
+  /* line-height: -1px; */
+  cursor: pointer;
+}
+
+.people-character-data div:hover {
+  background-color: rgba(13, 168, 255, 0.45);
+}
+span {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bolder;
+  margin-top: 25px;
+  font-size: 15px;
+
+  /* background-color: #00A8FF; */
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  gap: 20px;
+}
+
+button {
+  border: none;
+  padding: 8px 19px;
+  width: 100px;
+  color: white;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+.enable {
+  background: rgb(0, 168, 255, 0.4);
+}
+.disable {
+  background: rgb(0, 168, 255, 0.7);
+  opacity: 0.4;
+}
+.btn2 {
+  background: rgb(0, 168, 255, 0.4);
+}
+.btn1 {
+  background: rgb(0, 168, 255, 0.4);
+}
+
+.main {
+  height: 490px;
+}
+@media only screen and (max-width: 700px) {
+  .people-character-data {
+    margin-top: 13px;
+  }
+  span {
+    font-size: 20px;
+  }
+  .main {
+    height: 400px;
+    overflow-y: auto;
+  }
+  .button {
+    margin-bottom: -26px;
+    margin-top: 20px;
+  }
+  .loader {
+    left: 40%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+  }
+
+  .loader,
+  .loader:after {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+  }
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-track {
+    width: 4px;
+    /* border: none; */
+    /* background: transparent; */
+  }
+  ::-webkit-scrollbar-button,
+  ::-webkit-scrollbar-track-piece,
+  ::-webkit-scrollbar-corner,
+  ::-webkit-resizer {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    background-color: #00a8ff;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-image: url("https://i.imgur.com/GvV1R30.png");
+    opacity: 90%;
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-color: transparent;
+  }
+}

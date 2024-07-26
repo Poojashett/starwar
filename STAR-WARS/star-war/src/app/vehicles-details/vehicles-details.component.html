@@ -1,0 +1,25 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+
+<div class="people-detail-maindiv1">
+  <div class="people-detail-maindiv2"> 
+    <div class="img-div">
+      <img [src]="src" alt="" id="yoda-size" />
+
+    </div>
+    <div class="detail-div" >
+      <h1 class="heading-name">{{vehicle.name | uppercase}}</h1>
+      <p class="des-p"><span class="designation">Cargo_capacity :  </span><span class="designation-data"> {{vehicle.cargo_capacity | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Consumables :  </span><span class="designation-data">{{vehicle.consumables| titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Cost_in_credits :  </span><span class="designation-data">{{vehicle.cost_in_credits | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Crew :  </span><span class="designation-data">{{vehicle.crew | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Length :  </span><span class="designation-data">{{vehicle.length | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Manufacturer :  </span><span class="designation-data">{{vehicle.manufacturer | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Max_atmosphering_speed :  </span><span class="designation-data">{{vehicle.max_atmosphering_speed | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Model :  </span><span class="designation-data">{{vehicle.model | titlecase}}</span></p>
+      <p class="des-p"><span class="designation">Passengers :  </span><span class="designation-data">{{vehicle.passengers | titlecase}}</span></p>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
